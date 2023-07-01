@@ -1,0 +1,62 @@
+{
+	"name": "effector-mui-snacks",
+	"version": "1.0.0",
+	"description": "Implementation snacks stack using effector and MUI",
+	"type": "module",
+	"main": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"dev": "vite --host",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"test": "npx vitest run",
+		"lint": "eslint --ext .tsx,.ts src",
+		"lint:fix": "eslint --ext .tsx,.ts src --fix",
+		"prettier": "prettier --write --config ./.prettierrc src",
+		"prepare": "husky install",
+		"gen:css-types": "tcm src"
+	},
+	"keywords": [
+		"effector",
+		"material ui",
+		"mui",
+		"snacks",
+		"snack",
+		"snack stack"
+	],
+	"author": "Bricks666",
+	"license": "ISC",
+	"dependencies": {
+		"classnames": "^2.3.2",
+		"patronum": "^1.18.0"
+	},
+	"peerDependencies": {
+		"@mui/material": "^5.13.6",
+		"effector": "^22.8.6",
+		"effector-react": "^22.5.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@feature-sliced/eslint-config": "^0.1.0-beta.6",
+		"@typescript-eslint/eslint-plugin": "^5.60.1",
+		"@typescript-eslint/parser": "^5.60.1",
+		"@vitejs/plugin-react": "^4.0.1",
+		"eslint": "^8.44.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-effector": "^0.10.5",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-sonarjs": "^0.19.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.3",
+		"prettier": "^2.8.8",
+		"typed-css-modules": "^0.7.2",
+		"typescript": "^5.1.6",
+		"vite": "^4.3.9",
+		"vite-plugin-dts": "^3.0.2",
+		"vitest": "^0.32.2"
+	}
+}
